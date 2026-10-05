@@ -1,0 +1,28 @@
+#EXTM3U
+# TVBox 配置验证用直播列表
+# 内容全部为公开授权的技术测试流 / CC 授权开源影片，可合法自由使用
+# 用途：验证 TVBox 播放器、解码、网络链路是否正常
+
+#EXTINF:-1 group-title="配置验证",Mux 测试流（多码率 HLS）
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 group-title="配置验证",Apple 官方 HLS 示例（fMP4）
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+
+#EXTINF:-1 group-title="开源影片",Tears of Steel（CC-BY，Blender 基金会）
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 group-title="开源影片",Tears of Steel 多语字幕版
+https://test-streams.mux.dev/tos_ismc/main.m3u8
+
+#EXTINF:-1 group-title="配置验证",时间戳偏移测试流
+https://test-streams.mux.dev/pts_shift/master.m3u8
+
+# ===== 以下是你自己的合法源，取消注释并替换地址后使用 =====
+# 家庭 IPTV（运营商合法提供的组播/单播地址）
+##EXTINF:-1 group-title="我的直播",CCTV-1
+##http://192.168.3.60:8080/udp/239.x.x.x:5002
+
+# NAS / Alist 上你自己的媒体文件
+##EXTINF:-1 group-title="我的媒体",家庭录像
+##http://192.168.3.50:5244/d/movies/family.mp4
